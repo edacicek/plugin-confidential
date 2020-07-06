@@ -1,0 +1,62 @@
+{
+  "name": "Elia Plugin",
+  "version": "1.7",
+  "description": "Meet Elia, your personal assistant for language learning!",
+  "permissions": [
+    "storage",
+    "contextMenus"
+  ],
+    "background": {
+        "scripts": [
+          "js/background.js"
+        ],
+        "persistent": true
+    },
+  "browser_action": 
+  {
+   "default_title": "Elia",
+   "default_popup": "html/meaning.html",
+   "default_icon": "images/icon.png"
+ },
+ "web_accessible_resources": [
+   "js/libs/*.js",
+   "html/form.html",
+   "html/meaning.html",
+   "html/use.html",
+   "js/form.js",
+   "js/meaning.js",
+   "js/use.js",
+   "html/top-header.html",
+   "html/footer.html",
+   "html/activity/*.html",
+   "js/activity/*.js",
+   "js/elia/*.js",
+   "html/*.html"
+],
+ "content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "exclude_globs": ["*google*"],
+    "all_frames": true,
+    "css": [
+      "css/elia-reading.css"
+    ],
+    "js": [
+      "js/libs/jquery.min.js",
+      "js/libs/popper.min.js",
+      "js/libs/tippy.min.js",
+      "js/content.js"
+    ],
+    "run_at": "document_end"
+  }
+],
+ "icons":{
+   "16": "images/icon.png",
+   "48": "images/icon.png",
+   "128": "images/icon.png"
+ },
+ "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+ "manifest_version": 2
+}

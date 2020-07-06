@@ -1,0 +1,131 @@
+:root {
+    --elia-red: #DC3758;
+    --elia-cyan: #00C78C;
+    --elia-light-gray: #aeadad;
+    --elia-purple: #6949F6;
+    --elia-black: #2f3033;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 100%;
+    width: 48rem;
+    overflow: scroll;
+    padding: 1rem;
+}
+
+a:link {
+    color: var(--elia-black) !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--elia-red) !important;
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--elia-black) !important;
+    text-decoration: none;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 0.6rem;
+}
+
+
+
+.text-cyan {
+    color: var(--elia-cyan);
+}
+
+.text-pink {
+    color: var(--elia-red);
+}
+
+.top-bar {
+    background: white;
+    padding: 1rem;
+}
+
+.text-footer {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.text-helper {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.icon-action {
+    width: 1rem;
+    height: 1rem;
+}
+
+.history-container {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.next-button {
+    border-radius: 1rem;
+    width: 10rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.error-message {
+    color: var(--elia-light-gray);
+    font-size: 1.2rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.user-input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 3px solid var(--elia-purple);
+}
+
+.user-input-part {
+  border: 1px solid var(--elia-light-gray);
+  background: transparent;
+  color: var(--elia-red);
+}
+
+.scrollable {
+  height: 17.4rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.input-div{
+    height: 17.2rem;
+}
+
+.mark{
+    padding: 0;
+    background: transparent;
+    text-decoration-color: red !important;
+    text-decoration: underline;
+}
+
+.tooltip .arrow:before {
+    border-top-color: #666666 !important;
+}
+
+.tooltip .tooltip-inner {
+    background-color: #666666;
+}

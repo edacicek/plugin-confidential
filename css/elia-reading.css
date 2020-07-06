@@ -1,0 +1,76 @@
+.elia_question {
+    height: 0;
+    width: 100%;
+    line-height: 0;
+    color: #fefefe;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 14px;
+    background-color: #6949F6;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: .4rem;
+    margin-top: .4rem;
+    font-size:  .8rem;
+    font-family: 'Nunito', sans-serif;
+    z-index:9999;
+}
+
+.tippy-tooltip.lempos-theme {
+    font-family: 'Nunito', sans-serif;
+    font-size:  .9rem;
+}
+
+.tippy-tooltip.collocation-theme {
+    font-family: 'Nunito', sans-serif;
+    font-size:  .9rem;
+    width: 17rem;
+    background: white;
+    color: #2f3033;
+    -webkit-box-shadow: 10px 9px 23px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 9px 23px -3px rgba(0,0,0,0.75);
+    box-shadow: 10px 9px 23px -3px rgba(0,0,0,0.75);
+    z-index:9999;
+}
+
+.elia-reading-collocates {
+    text-decoration: underline #679761; background: #00C78C;
+}
+
+.iframe-full {
+    position: absolute;
+    display:block;
+    background-color: transparent;
+    z-index:9999;
+    border:0 solid #aeadad;
+    padding:0;
+    height:450px;
+    width:320px;
+}
+
+.iframe-shadow {
+    -webkit-box-shadow: 10px 9px 23px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 9px 23px -3px rgba(0,0,0,0.75);
+    box-shadow: 10px 9px 23px -3px rgba(0,0,0,0.75);
+    background-color: white !important;
+}
+
+.iframe-button {
+    height: 0;
+    line-height: 0;
+    color: #fefefe;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 14px;
+    background-color: #DC3758;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: .4rem;
+    margin-top: .4rem;
+    font-size:  .8rem;
+    font-weight: bolder;
+    font-family: 'Nunito', sans-serif;
+    -webkit-box-shadow: 5px 9px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 9px 8px -3px rgba(0,0,0,0.75);
+    box-shadow: 5px 9px 8px -3px rgba(0,0,0,0.75);
+}

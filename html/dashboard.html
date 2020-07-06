@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/libs/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/elia.css">
+    <link rel="stylesheet" type="text/css" href="/css/formMeaningUse.css">
+    <script src="/js/libs/jquery.min.js"></script>
+    <script src="/js/libs/fontawesome.js"></script>
+    <script src="/js/elia/config.js"></script>
+    <script src="/js/dashboard.js"></script>
+    <title>Elia Dashboard</title>
+</head>
+
+<body>
+    <div id="topHeader">
+        <div class="fixed-top top-bar">
+            <div class="row">
+                <div class="col-4 text-center border-bottom border-dark" id="top_status" style="border-width:0.2rem !important;">
+                    <h4><a href="/html/form.html">STATUS</a></h4>
+                </div>
+                <div class="col-4 text-center border-bottom" id="top_progress" style="border-width:0.2rem !important;">
+                    <h4><a href="/html/meaning.html">PROGRESS</a></h4>
+                </div>
+                <div class="col-4 text-center border-bottom" id="top_goal" style="border-width:0.2rem !important;">
+                    <h4><a href="/html/use.html">GOAL</a></h4>
+                </div>
+                <a href="/html/dashboard.html" role="button" class="btn bg-transparent btn-block float-right fixed-bottom mb-5"><i class="fas fa-tachometer-alt text-secondary"></i> <span class="text-secondary small">Dashboard</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-bottom top-bar">
+        <div class="row">
+            <div class="col-12 text-center border-bottom" id="top_form" style="border-width:0.2rem !important;">
+                <button id="back" type="button" class="btn bg-transparent btn-block"><h4><i class="fas fa-angle-left"></i> Back</h4></button>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="definition-content-title">
+        <div class="col-12 align-self-center">
+            <div class="subtitle">
+                Word Forms
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5 mt-5 p-0 flex-grow">
+        <div class="row">
+            <div class="col-12 align-self-center">
+                <div class="text-content">
+                    Your overall vocabulary size is ca. <b> <span id="vocabulary_total_size"><i class="fas fa-circle-notch fa-spin"></i></span> words</b>
+                    which roughly equals to the <b> <span id="vocabulary_cefr_level"><i class="fas fa-circle-notch fa-spin"></i></span> level</b>
+                    <br>
+                    Your vocabulary compared to that of an expert English writer:
+                    <br>
+                    <div class="progress mt-2">
+                        <div id="pbt" class="progress-bar-striped bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><div class="text-white text-center"><span id="vocabulary_technical_percent">0%</span> Technical</div></div>
+                    </div>
+                    <div class="progress mt-2">
+                      <div id="pba" class="progress-bar-striped bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><div class="text-white text-center"><span id="vocabulary_academic_percent">0%</span> Academic</div></div>
+                    </div>
+                    <div class="progress mt-2">
+                      <div id="pbg" class="progress-bar-striped bg-warning" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><div class="text-white text-center"><span id="vocabulary_general_percent">0%</span> General</div></div>
+                    </div>
+                    <br>
+                    Your current learning speed with Elia is <br>
+                    <b><span id="word_learning_speed_total"><i class="fas fa-circle-notch fa-spin"></i></span> new word a week</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/libs/jquery.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/bootstrap.bundle.min.js"></script>
+    <script src="/js/elia/tools.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/libs/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/elia.css">
+    <script src="/js/elia/config.js"></script>
+    <script src="/js/libs/amazon-cognito-identity.min.js"></script>
+    <script src="/js/libs/aws-sdk.min.js"></script>
+    <script src="/js/elia/security.js"></script>
+    <title>Elia Browser Plugin</title>
+</head>
+
+<body>
+    <div class="fixed-top top-bar">
+        <div class="row">
+            <div class="col-4 text-center border-bottom" id="top_form" style="border-width:0.2rem !important;">
+                <h4>FORM</h4>
+            </div>
+            <div class="col-4 text-center border-bottom" id="top_meaning" style="border-width:0.2rem !important;">
+                <h4>MEANING</h4>
+            </div>
+            <div class="col-4 text-center border-bottom" id="top_use" style="border-width:0.2rem !important;">
+                <h4>USE</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5 mt-5 p-0">
+        <div class="row">
+            <div class="col-12 align-self-center">
+                    <div id="meaning_loading" class="d-flex align-items-center">
+                        <strong>Retrieving meaning information...</strong>
+                        <div class="spinner-border ml-auto text-danger" role="status" aria-hidden="true"></div>
+            </div>
+                    </div>
+        </div>
+    </div>
+    <script src="/js/libs/jquery.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/bootstrap.bundle.min.js"></script>
+    <script src="/js/elia/tools.js"></script>
+    <script src="/js/meaning.js"></script>
+</body>
+
+</html>

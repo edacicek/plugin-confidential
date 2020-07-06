@@ -1,0 +1,57 @@
+.word-1 {
+    font-size: 1.6rem;
+    color: var(--elia-red);
+    text-transform: lowercase;
+}
+
+.pos-1 {
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: var(--elia-cyan);
+    border-radius: 0.35rem;
+    border: 0.07rem solid var(--elia-light-gray);
+    padding: 0.1rem 0.7rem 0.1rem 0.7rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.more-1 {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color: var(--elia-purple);
+}
+
+.subtitle {
+    color: var(--elia-light-gray);
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.header {
+    color: var(--elia-light-gray);
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem 0 0 0;
+}
+.question {
+    color: var(--elia-light-gray);
+    font-size: 0.8rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.text-content {
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-align: left;
+}
+
+.word-highlighted {
+    font-weight: normal;
+    color: var(--elia-red);
+}

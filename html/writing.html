@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/libs/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/elia-writing.css">
+    <script src="/js/elia/config.js"></script>
+    <script src="/js/libs/fontawesome.js"></script>
+    <title>Elia Plugin</title>
+</head>
+
+<body>
+    <div class="w-100">
+        <div class="row">
+            <div class="col-12 align-self-center">
+                  <div class="form-group">
+                    <div contentEditable="true" class="form-control input-div" id="user-text" spellcheck="false" style="overflow-y: auto;"></div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-6 align-self-center" id="wordStack">
+            </div>
+            <div class="col-6 align-bottom ">
+                <button class="btn btn-outline-dark btn-sm border-0 m-1 float-right" id="feedback-button"><i class="far fa-comment-alt"></i></button>
+                <button class="btn btn-outline-dark btn-sm border-0 m-1 float-right" id="notes-button"><i class="far fa-clipboard"></i></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 align-self-center ">
+                  <button class="btn btn-sm btn-secondary" id="copyText" data-toggle="modal" data-target="#copyModal">
+                      <i class="fas fa-clipboard"></i> Copy to clipboard
+                  </button>
+            </div>
+            <div class="col-6 align-self-center text-right">
+                  <button class="btn btn-sm btn-outline-secondary" disabled>
+                      <i class="fas fa-tachometer-alt"></i> Words: <span id="wordCounter">0</span>
+                  </button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="copyModal" tabindex="-1" role="dialog" aria-labelledby="copyModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="copyModalLabel">Elia Plugin | Writing Assistant</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Text copied! Now you can past it anywhere.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cool</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="/js/libs/jquery.min.js"></script>
+    <script src="/js/libs/jquery.mark.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/bootstrap.bundle.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/typo.js"></script>
+    <script src="/js/libs/sql-wasm.js"></script>
+    <script src="/js/libs/fuse.min.js"></script>
+    <script src="/js/libs/fuzzycomplete.js"></script>
+    <script src="/js/elia/tools.js"></script>
+    <script src="/js/elia/ui.js"></script>
+    <script src="/js/writing.js"></script>
+</body>
+
+</html>

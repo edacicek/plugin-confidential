@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/libs/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/elia.css">
+    <script src="/js/elia/config.js"></script>
+    <script src="/js/libs/fontawesome.js"></script>
+    <script src="/js/libs/amazon-cognito-identity.min.js"></script>
+    <script src="/js/libs/aws-sdk.min.js"></script>
+    <script src="/js/libs/sha256.min.js"></script>
+    <title>Welcome to Elia</title>
+</head>
+
+<body>
+    <div class="container mb-5 mt-1 p-0">
+        <div class="row">
+            <div class="col-12 align-self-center">
+                <h3>Welcome to Elia</h3>
+            </div>
+        </div>
+         <div class="row mt-4">
+            <div class="col-12 align-self-center">
+                <form>
+                <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                     </div>
+                    <input name="" class="form-control" placeholder="Email" type="email" id="log_email">
+                </div> <!-- input-group.// -->
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                     </div>
+                    <input class="form-control" placeholder="******" type="password" id="log_password">
+                </div> <!-- input-group.// -->
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                </div> <!-- form-group// -->
+                </form>
+            </div>
+        </div>
+        <button class="btn btn-sm btn-outline-danger btn-block" id="login"> Login </button>
+        <p class="text-center"><a href="#" class="btn" hidden>Forgot password?</a></p>
+        <hr class="mb-3">
+        <p class="text-center ">Ready to try it?</p>
+        <div class="form-group">
+            <button type="submit" class="btn btn-sm btn-danger btn-block" id="goToRegister"> Register</button>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/libs/jquery.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/bootstrap.bundle.min.js"></script>
+    <script src="/js/elia/tools.js"></script>
+    <script src="/js/elia/userControl.js"></script>
+</body>
+
+</html>

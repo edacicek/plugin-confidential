@@ -1,0 +1,146 @@
+:root {
+    --elia-red: #DC3758;
+    --elia-cyan: #00C78C;
+    --elia-light-gray: #aeadad;
+    --elia-purple: #6949F6;
+    --elia-black: #2f3033;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 80%;
+    width: 18rem;
+    height: 27rem;
+    overflow: scroll;
+    margin: 0.5rem;
+    padding: 1rem;
+    border: deeppink;
+    background: white;
+}
+
+a:link {
+    color: var(--elia-black) !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--elia-red) !important;
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--elia-black) !important;
+    text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+h4 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-bottom: 0.3rem;
+}
+
+.button-no-action {
+    font-size: 90%;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #EEEEEE;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #EEEEEE;
+}
+
+.text-cyan {
+    color: var(--elia-cyan);
+}
+
+.text-pink {
+    color: var(--elia-red);
+}
+
+.top-bar {
+    background: white;
+    padding: 0.8rem;
+}
+
+.text-footer {
+    font-size: 0.7rem;
+    font-weight: lighter;
+}
+
+.icon {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.icon-action {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.history-container {
+    width: 110%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.collocate-container {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+
+.next-button {
+    border-radius: 1rem;
+    width: 10rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.error-message {
+    color: var(--elia-light-gray);
+    font-size: 1.0rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.user-input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 3px solid var(--elia-purple);
+}
+
+.user-input-part {
+  border: 1px solid var(--elia-light-gray);
+  background: transparent;
+  color: var(--elia-red);
+}
+
+.text-purple {
+    color: var(--elia-purple);
+}
